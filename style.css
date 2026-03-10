@@ -1,0 +1,35 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; color: #1a1a2e; line-height: 1.7; }
+.container { max-width: 720px; margin: 0 auto; padding: 40px 20px; }
+header { text-align: center; margin-bottom: 40px; }
+header h1 { font-size: 2rem; color: #6C63FF; margin-bottom: 4px; }
+header .subtitle { color: #666; font-size: 0.95rem; }
+.card-list { display: flex; flex-direction: column; gap: 16px; }
+.card { display: block; background: #fff; border-radius: 12px; padding: 24px; text-decoration: none; color: inherit; box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s, box-shadow 0.2s; }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(108,99,255,0.15); }
+.card h2 { font-size: 1.15rem; margin-bottom: 4px; }
+.card p { color: #888; font-size: 0.85rem; }
+footer { text-align: center; margin-top: 48px; color: #999; font-size: 0.8rem; }
+footer p { margin-bottom: 4px; }
+
+/* Legal page styles */
+.legal { background: #fff; border-radius: 12px; padding: 32px 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 32px; }
+.legal h1 { font-size: 1.5rem; color: #6C63FF; margin-bottom: 8px; }
+.legal .meta { color: #999; font-size: 0.82rem; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid #eee; }
+.legal h2 { font-size: 1.1rem; color: #333; margin-top: 28px; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid #f0f0f0; }
+.legal h3 { font-size: 0.95rem; color: #555; margin-top: 16px; margin-bottom: 8px; }
+.legal p, .legal li { font-size: 0.9rem; color: #444; margin-bottom: 8px; }
+.legal ul, .legal ol { padding-left: 20px; margin-bottom: 12px; }
+.legal li { margin-bottom: 4px; }
+.legal table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.85rem; }
+.legal th, .legal td { border: 1px solid #e0e0e0; padding: 10px 12px; text-align: left; }
+.legal th { background: #f8f8ff; font-weight: 600; color: #333; }
+.back-link { display: inline-block; margin-bottom: 20px; color: #6C63FF; text-decoration: none; font-size: 0.9rem; }
+.back-link:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  .container { padding: 24px 16px; }
+  .legal { padding: 24px 18px; }
+  .legal table { font-size: 0.78rem; }
+  .legal th, .legal td { padding: 8px; }
+}
